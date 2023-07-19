@@ -19,3 +19,19 @@ if (aaa === 'ljq') {
 } else {
     console.log('是其他')
 }
+
+const name = 'ceshi' 
+
+switch (name) {
+    case 'ljq':{
+        console.log('是ljq')
+        break;
+    };
+    case 'ceshi':{
+        console.log('是ceshi')
+        break;
+    }
+    default:{
+        console.log('是其他')
+    }
+}
