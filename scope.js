@@ -26,5 +26,14 @@ fn()
 }
 // console.log(c);  // 取不到c
 console.log(d);
+// 例子2
+{
+    let ljqout = 2
+    {
+        console.log(ljqout);
+        let ljq = 1
+    }
+}
+// console.log(ljq);
 
 // 作用域查找时，先找当前作用域，再找上一级作用域，直到全局作用域
