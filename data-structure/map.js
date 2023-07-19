@@ -20,4 +20,7 @@ hashMap.name
 delete hashMapObj.name
 
 // hashmap和object区别
-// 
+// hashmap的key可以是任意数据类型
+const pojo = { name: '测试' }
+hashMap.set(pojo, 'aaa')
+console.log(hashMap.get(pojo))

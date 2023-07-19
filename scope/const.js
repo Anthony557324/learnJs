@@ -1,5 +1,5 @@
 // const a = 1
-// a = 2    报错    每一个赋值的数据，需要
+// a = 2    报错    每一个赋值的数据，需要新的内存空间保存
 const a ={
     value: 1
 }
@@ -13,7 +13,7 @@ const test = {
 
 test.name = 2
 // 以下代码会报错
-// test {
+// test = {
 //     name = 2,
 //     age = 3
 // }
