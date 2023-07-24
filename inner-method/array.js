@@ -91,9 +91,27 @@ console.log(arr7Result);
 
 // 8.数组扁平化
 const arr8 = [1, 2, 3, [4, 5, 6, [7, 8, 9]]];
-const arr8Result1 = arr8.flat(1)
-const arr8Result2 = arr8.flat(2)
+const arr8Result1 = arr8.flat(1);
+const arr8Result2 = arr8.flat(2);
 console.log(arr8Result1);
 console.log(arr8Result2);
 // TODO:请将数组扁平化，不能用flat
 // TODO:将一个对象深拷贝
+
+// 9.join
+const arr9 = [1, 2, 3, 4, 5];
+// 默认是,
+const arr9Result = arr9.join("");
+console.log(arr9Result);
+
+// 10.reverse反转数组
+
+// 11.sort数组排序
+const arr11 = [1, 3, 10, 4, 5];
+arr11.sort(function (a, b) {
+  // 排序规则
+  return a - b; // 正序，b - a为逆序
+});
+console.log(arr11);
+
+// 12.slice数组切分
