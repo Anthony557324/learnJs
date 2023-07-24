@@ -115,3 +115,18 @@ arr11.sort(function (a, b) {
 console.log(arr11);
 
 // 12.slice数组切分
+const arr12 = [1,2,3,4,5]
+const arr12Result = arr12.slice(1,3)
+console.log(arr12Result);
+
+// 13.splice
+// 删除元素 splice(start, deleteCount)
+// 添加元素 splice(start, 0, item1,item2)
+
+// 14.reduce
+
+// 15.unshift
+// unshift在头部增加元素
+// shift在头部删除元素
+// push在尾部增加元素
+// pop在尾部删除元素
