@@ -28,7 +28,7 @@ for (var i = 0; i < arr.length; i++) {
     return function () {
       return i_inner;
     }
-  })(i)
+  })(i) // 立即执行
   result.push(clo)
 }
 // 闭包是语言的特性
