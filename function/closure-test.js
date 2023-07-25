@@ -4,14 +4,6 @@ add(1, 2, 3, 4)
 mul(1, 2)
 // function mul(a, b) {return a * b}
 
-// function add(a, b, c, d) {
-//     return add(a)(b)(c)(d)
-// }
-
-// function mul(a,b){
-//     return mul(a)(b)
-// }
-
 function add(a, b, c, d) {
     return addCurrying(a)(b)(c)(d)
 }
