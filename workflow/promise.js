@@ -13,6 +13,7 @@ function network() {
         setTimeout(() => {
             // console.log('hello world')
             // 转换状态，并携带返回值
+            // 找到异步函数的回调执行时机，将resolve进行调用
             resolve('hello world')
         }, 3000)
     }
@@ -30,12 +31,15 @@ network().then((data) => {
     return network()
 }).then((data) => {
     console.log(data)
-})
+}).catch((err) => { }).finally(() => { })
 // 状态转换后执行
 
 // 实现sleep函数
-function sleep(time) { 
+function sleep(time) {
     // TODO:写代码
+    return new Promise((resolve, reject) => {
+        setTimeout(resolve, time)
+    })
 }
 console.log('start');
 sleep(3000).then(() => {
