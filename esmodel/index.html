@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- <script src="./src/index.js" type="module"></script> -->
+
+    <script type="module">
+      //   import { test, b, testFn } from "./src/index.js";
+
+      //   几乎这个模块所有的内容都会用到
+      //   否则仅使用结构语法{}
+      import * as indexModule from "./src/index.js";
+      import { testFn as moduleUniqueFn, a, user } from "./src/index.js";
+
+      import indexModule from "./src/index.js"; // 取的是默认导出值
+      console.log(indexModule);
+      indexModule.testFn();
+      moduleUniqueFn();
+
+      setInterval(() => {
+        console.log(user.name, a, "index.html");
+      }, 1000);
+      //   console.log(test);
+      //   console.log(b);
+      //   testFn();
+    </script>
+  </body>
+</html>
