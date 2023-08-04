@@ -4,8 +4,19 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <!-- <script src="https://code.jquery.com/jquery-3.7.0.js"></script> -->
+    <!-- <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script> -->
   </head>
   <body>
+    
+  <div id="vueapp">{{message}}</div>
+  <script type="importMap">
+    {
+      "imports": {
+        "vue": "https://unpkg.com/vue@3/dist/vue.esm-browser.js"
+      }
+    }
+  </script>
     <!-- <script src="./src/index.js" type="module"></script> -->
 
     <script type="module">
@@ -27,6 +38,21 @@
       //   console.log(test);
       //   console.log(b);
       //   testFn();
+    </script>
+    <script type="module">
+      // import vue from 'vue'
+
+      // import * as vue from 'https://unpkg.com/vue@3/dist/vue.esm-browser.js'
+      import * as vue from "vue";
+      const app = vue.createApp({
+        data() {
+          return {
+            message: "Hello Vue!",
+          };
+        },
+      });
+      app.mount("#vueapp");
+      console.log(vue);
     </script>
   </body>
 </html>
